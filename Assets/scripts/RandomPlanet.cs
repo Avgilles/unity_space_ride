@@ -13,8 +13,8 @@ public class RandomPlanet : MonoBehaviour
     void Start()
     {
         float random = UnityEngine.Random.Range(0.0f, 10.0f);
-        Debug.Log("start");
-        Debug.Log(random);
+        //Debug.Log("start");
+        //Debug.Log(random);
     }
     private void spawnPlanet()
     {

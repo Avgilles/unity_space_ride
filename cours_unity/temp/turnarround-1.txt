@@ -1,0 +1,43 @@
+public class TurnArround : MonoBehaviour
+{
+    public float nbr = .5f;
+    public Transform meeple;
+    public GameObject grandChild;
+    public float speed = 2.0f;
+   // public Component[] hingeJoints;
+    // Vector3 monVector = new Vector3(0,nbr,0);
+    // Start is called before the first frame update
+    void Start()
+    {
+        /*hingeJoints = GetComponentsInChildren<HingeJoint>();
+
+        foreach (HingeJoint joint in hingeJoints)
+        {
+            joint.useSpring = false;
+            Debug.Log(joint);
+        }
+
+        Debug.Log(hingeJoints);*/
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        // transform.position = transform.position + new Vector3(0,1,0);
+        // transform.rotation = transform.rotation + new Vector3(0,1,0);
+
+        // Quaternion target = Quaternion.Euler(60, 0, 0);
+        // transform.rotation = Quaternion.Slerp(transform.rotation, target, 1);
+        // transform.eulerAngles = new Vector3(60,0,0);
+        // transform.localScale = transform.localScale + new Vector3(0,5,0);
+
+        // transform.LookAt(target);
+        // transform.LookAt(new Vector3(0,0,0));
+        // transform.Translate(1,0,0);
+        meeple = this.gameObject.transform.GetChild(0);
+        grandChild = this.gameObject.transform.GetChild(0).GetChild(0).gameObject;
+
+        Debug.Log(meeple, grandChild);
+        // transform.RotateAround(meeple.transform.position, Vector3.up, 20* Time.deltaTime* speed);
+    }
+}

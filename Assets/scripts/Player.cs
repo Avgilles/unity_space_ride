@@ -18,12 +18,10 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            Debug.Log("fleche bas");
             transform.Translate(Vector3.back * Time.deltaTime * speedMove);
         }
         else if (Input.GetKey(KeyCode.UpArrow))
         {
-            Debug.Log("fleche haut");
             transform.Translate(Vector3.back *Time.deltaTime * -speedMove);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
