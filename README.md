@@ -3,7 +3,7 @@
 Mon tout premier projet sur unity. J'ai pu apprendre beaucoup de concept nottament la gestion de la caméra pour le joueur, la gestion des déplacement, la création d'objet random dans une scène, le Lerp ..
  
 
- ![preview](/preview/preview.gif)
+ ![preview](./preview/preview.gif)
 ## Instansation des éléments
 
 Pour créer afficher mes élément j'ai instancié et placer de manière random les différents sytème solaire. Grâce a cela chaque lancement de jeux permettera d'avoir un environement différents.
