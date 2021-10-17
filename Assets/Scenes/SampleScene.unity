@@ -830,8 +830,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfc302254d1c314a891136036ac5f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planete1: {fileID: 0}
-  speed: 0
+  planete1: {fileID: 509447231}
+  speed: 5
 --- !u!1 &509447230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1483,7 +1483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5de77440f4b3afe478eaeb7158ff9ce9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.61
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5de77440f4b3afe478eaeb7158ff9ce9, type: 3}
       propertyPath: m_LocalPosition.y
