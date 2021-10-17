@@ -33,7 +33,7 @@ public class InitiateRandomly : MonoBehaviour
         
     }
 
-    private Vector3 randomVector3(Vector2 axe_x, Vector2 axe_z, Vector2 axe_y = default(Vector2))
+    private Vector3 randomVector3(Vector2 axe_x, Vector2 axe_z = default(Vector2), Vector2 axe_y = default(Vector2))
     {
         float randomPx = UnityEngine.Random.Range(axe_x.x, axe_x.y);
         float randomPy = UnityEngine.Random.Range(axe_y.x, axe_y.y);
@@ -49,5 +49,6 @@ public class InitiateRandomly : MonoBehaviour
 
         int n = Random.Range(0, objectToInitiate.Length);
         GameObject g = Instantiate(objectToInitiate[n], Rpos, objectToInitiate[n].transform.rotation);
+        g.transform.parent = gameObject.transform;
     }
 }
