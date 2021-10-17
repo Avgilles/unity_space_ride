@@ -351,9 +351,12 @@ MonoBehaviour:
   pos: {fileID: 2147193266}
   objectToInitiate:
   - {fileID: 788990952}
+  - {fileID: 1482329139}
+  - {fileID: 219594809}
+  - {fileID: 1049672147}
   element_number: 5
   beetween1: {x: -20, y: 20}
-  beetween2: {x: 0, y: 0}
+  beetween2: {x: 0.5, y: 1}
   beetween3: {x: -20, y: 20}
 --- !u!114 &612656995
 MonoBehaviour:
@@ -387,7 +390,7 @@ MonoBehaviour:
   - {fileID: 719411825}
   element_number: 40
   beetween1: {x: -30, y: 30}
-  beetween2: {x: 0, y: 0}
+  beetween2: {x: 0.1, y: 0.5}
   beetween3: {x: -30, y: 30}
 --- !u!1001 &719411824
 PrefabInstance:
