@@ -23,15 +23,23 @@ public class Ship_enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        MooveForward();
+    }
+
+    /** A refactoriser 🤮*/
+
+    void MooveForward()
+    {
         Vector3 pos = new Vector3(transform.position.x, 0, transform.position.z);
         Debug.Log(distance);
-        if(surPlanette1 == true)
+        if (surPlanette1 == true)
         {
             distance = Vector3.Distance(pos, planete2.position);
             /** moove spaceship 👇 */
-            transform.position = Vector3.MoveTowards(pos, planete2.position, Time.deltaTime * speed);   
-            
-            if(distance < distanceMin)
+            transform.position = Vector3.MoveTowards(pos, planete2.position, Time.deltaTime * speed);
+            transform.LookAt(planete2.position);
+           
+            if (distance < distanceMin)
             {
                 Debug.Log("surplanette2 = true");
                 surPlanette1 = false;
@@ -42,9 +50,11 @@ public class Ship_enemy : MonoBehaviour
         {
             distance = Vector3.Distance(pos, planete1.position);
             /** moove spaceship 👇 */
-            transform.position = Vector3.MoveTowards(pos, planete1.position, Time.deltaTime * speed);   
-            
-            if(distance < distanceMin)
+            transform.position = Vector3.MoveTowards(pos, planete1.position, Time.deltaTime * speed);
+            transform.LookAt(planete1.position);
+
+
+            if (distance < distanceMin)
             {
                 Debug.Log("surplanette1 = true");
                 surPlanette1 = true;
@@ -52,7 +62,5 @@ public class Ship_enemy : MonoBehaviour
 
             }
         }
-
-
     }
 }
