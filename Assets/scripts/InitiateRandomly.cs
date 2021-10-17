@@ -18,7 +18,7 @@ public class InitiateRandomly : MonoBehaviour
 
         for (count=0; count < nbrAsteroide; count++)
         {
-            InstantiateObject(-10, 10);
+            InstantiateObject();
             Debug.Log(count);
         }
 
@@ -31,19 +31,19 @@ public class InitiateRandomly : MonoBehaviour
         
     }
 
-    private void randomPos(int min,int max)
-    {
-
-
-    }
-
-    private void InstantiateObject(int min, int max)
+    private Vector3 randomPos(int min,int max)
     {
         int randomPx = UnityEngine.Random.Range(min, max);
         int randomPz = UnityEngine.Random.Range(min, max);
-        Vector3 result = new Vector3(randomPx,0, randomPz);
+        Vector3 result = new Vector3(randomPx, 0, randomPz);
+        return result;
+    }
+
+    private void InstantiateObject()
+    {
+        Vector3 Rpos = randomPos(-10, 10);
 
         int n = Random.Range(0, objectToInitiate.Length);
-        GameObject g = Instantiate(objectToInitiate[n], result, objectToInitiate[n].transform.rotation);
+        GameObject g = Instantiate(objectToInitiate[n], Rpos, objectToInitiate[n].transform.rotation);
     }
 }
