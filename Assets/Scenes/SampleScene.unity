@@ -831,7 +831,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   planete1: {fileID: 509447231}
-  speed: 5
+  speed: 8
+  distanceMin: 2
+  surPlanette1: 0
+  surPlanette2: 1
 --- !u!1 &509447230
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,7 +1065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nbr: 0.5
   target: {fileID: 612656990}
-  speed: 2
+  speed: 0.5
 --- !u!114 &612656996
 MonoBehaviour:
   m_ObjectHideFlags: 0
