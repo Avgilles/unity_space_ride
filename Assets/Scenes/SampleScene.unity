@@ -170,6 +170,9 @@ MonoBehaviour:
   objectToInitiate:
   - {fileID: 719411825}
   nbrAsteroide: 20
+  beetween1: {x: -10, y: 10}
+  beetween2: {x: 0, y: 0}
+  beetween3: {x: -10, y: 10}
 --- !u!1 &612656989
 GameObject:
   m_ObjectHideFlags: 0
