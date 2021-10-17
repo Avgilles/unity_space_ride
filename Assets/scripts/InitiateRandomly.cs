@@ -6,7 +6,7 @@ public class InitiateRandomly : MonoBehaviour
 {
     public Transform pos;
     public GameObject[] objectToInitiate;
-    public int nbrAsteroide = 20;
+    public int element_number = 20;
     private Vector3 posVector3;
     private int count;
 
@@ -20,7 +20,7 @@ public class InitiateRandomly : MonoBehaviour
     {
         Debug.Log(count);
 
-        for (count=0; count < nbrAsteroide; count++)
+        for (count=0; count < element_number; count++)
         {
             InstantiateObject();
         }
