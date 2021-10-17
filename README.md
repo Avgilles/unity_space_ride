@@ -1,12 +1,12 @@
 # Space Unity
 
-Mon tout premier projet sur unity. J'ai pu apprendre beaucoup de concept nottament la gestion de la caméra pour le joueur, la gestion des déplacement, la création d'objet random dans une scène, le Lerp ..
+Mon tout premier projet sur unity. J'ai pu apprendre beaucoup de concept nottament la gestion de la caméra pour le joueur, la gestion des déplacements, la création d'objets random dans une scène, le Lerp ..
  
 
  ![preview](./preview/preview.gif)
 ## Instansation des éléments
 
-Pour créer afficher mes élément j'ai instancié et placer de manière random les différents sytème solaire. Grâce a cela chaque lancement de jeux permettera d'avoir un environement différents.
+Pour créer afficher mes éléments j'ai instancié et placé de manière random les différents sytème solaire. Grâce à cela chaque lancement de jeux permettera d'avoir un environement différents.
 
 
 Lien vers le script : 
