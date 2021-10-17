@@ -49,7 +49,7 @@ public class InitiateRandomly : MonoBehaviour
         Vector3 scale = randomVector3(beetween2, beetween2, beetween2);
 
         int n = Random.Range(0, objectToInitiate.Length);
-        GameObject g = Instantiate(objectToInitiate[n], Rpos, objectToInitiate[n].transform.rotation);
+        GameObject g = Instantiate(objectToInitiate[n], transform.position + Rpos, objectToInitiate[n].transform.rotation);
         g.transform.parent = gameObject.transform;
         g.transform.localScale = scale;
     }
