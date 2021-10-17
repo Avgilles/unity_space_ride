@@ -25,7 +25,6 @@ public class InitiateRandomly : MonoBehaviour
             InstantiateObject();
         }
 
-
     }
 
     // Update is called once per frame

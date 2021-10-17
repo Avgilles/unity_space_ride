@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Asteroides : MonoBehaviour
 {
-    public Vector3 axe;
+    private Vector3 axe;
     private float random;
     private float randomX;
     private float randomY;
@@ -24,7 +24,6 @@ public class Asteroides : MonoBehaviour
     {
         axe = new Vector3(randomX +=0.04f *.5f, randomY += 0.015f * .5f, randomZ += 0.03f * .5f);
         transform.eulerAngles = axe;
-        //Debug.Log(axe);
 
     }
 }

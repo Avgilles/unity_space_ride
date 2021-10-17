@@ -135,9 +135,9 @@ GameObject:
   - component: {fileID: 612656993}
   - component: {fileID: 612656992}
   - component: {fileID: 612656991}
-  - component: {fileID: 612656995}
   - component: {fileID: 612656994}
   - component: {fileID: 612656996}
+  - component: {fileID: 612656995}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -366,7 +366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44a48f7760c5bf34098f839f4950c534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axe: {x: 0, y: 0, z: 0}
 --- !u!1 &788990952
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1900340611}
   speed: 1
+  camera: {fileID: 0}
   distanceCam: 20
 --- !u!1001 &1498278053
 PrefabInstance:
@@ -656,7 +656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151dc05f975e0324cb7e218e52a17440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMove: 10
+  speedMove: 15
   RotateSpeed: 90
 --- !u!1 &2147193264
 GameObject:
